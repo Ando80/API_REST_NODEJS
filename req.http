@@ -1,0 +1,30 @@
+POST http://localhost:8000/api/perso HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Martin",
+  "weapon": "gun"
+}
+
+###
+
+GET   http://localhost:8000/api/perso 
+
+
+###
+
+GET   http://localhost:8000/api/perso/D8c35KZ7hiegNoMC
+
+###
+
+PATCH   http://localhost:8000/api/perso/D8c35KZ7hiegNoMC HTTP/1.1
+content-type: application/json
+
+{
+ 
+  "weapon": "gun"
+}
+
+###
+
+DELETE    http://localhost:8000/api/perso/g8MIH1xIA1KEzePV
